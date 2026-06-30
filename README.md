@@ -1,6 +1,6 @@
 # QA Hackathon
 
-Assistente inteligente que corrige automaticamente seletores CSS quebrados em testes BDD com Playwright. Quando um teste falha por mudanca no DOM, o navegador analisa a pagina real, compara os seletores do arquivo de locators com os elementos encontrados na DOM e aplica a correcao. O Gemini fica como fallback quando a descoberta direta pela DOM nao for suficiente.
+Assistente inteligente que corrige automaticamente seletores CSS quebrados em testes BDD com Playwright. Quando um teste falha por mudanca no DOM, o navegador analisa a pagina real, compara os seletores do arquivo de locators com os elementos encontrados na DOM, com base na execução feita pelo Browser Use e aplica a correção.
 
 ## Dependencias
 
@@ -31,5 +31,6 @@ python aplicar_correcao.py
 |-----------|-------|
 | Playwright | Automacao do navegador |
 | pytest-bdd | Cenarios BDD |
+| Browser Use| Base Auxiliasr para correções |
 | DOM + Playwright | Descoberta direta dos seletores corretos |
 | Gemini (Google) | Fallback para casos em que a DOM nao basta |
