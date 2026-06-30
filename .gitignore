@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Playwright
+ms-playwright/
+
+# Output gerado
+output/ai/*.json
+
+# Ambiente virtual
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Chaves de API (NÃO versionadas)
+.env
+
+# Arquivos de teste/debug temporários
+test_*.py
+!bdd/steps/test_*.py

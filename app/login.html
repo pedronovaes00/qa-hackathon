@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body { font-family: Arial; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    form { width: 300px; padding: 30px; border: 1px solid #ccc; border-radius: 8px; }
+    label { display: block; margin-top: 10px; }
+    input { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; }
+    button { width: 100%; padding: 10px; margin-top: 20px; background: #0066cc; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #0052a3; }
+    #mensagem { margin-top: 15px; color: green; font-weight: bold; text-align: center; }
+  </style>
+</head>
+<body>
+  <form id="form-login">
+    <h2>Login</h2>
+
+    <label for="usuario">Usuário:</label>
+    <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário">
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+    <!-- ALTERE O ID ABAIXO para simular erro:
+         Troque id="submit-login" por id="btn-login" -->
+    <button type="submit" id="submit-login">Entrar</button>
+
+    <div id="mensagem"></div>
+  </form>
+
+  <script>
+    document.getElementById('form-login').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('mensagem').textContent = 'Login realizado com sucesso!';
+    });
+  </script>
+</body>
+</html>

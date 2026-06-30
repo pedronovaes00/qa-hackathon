@@ -1,0 +1,17 @@
+# === Framework de Testes ===
+pytest==9.1.1
+pytest-bdd==8.1.0
+pytest-playwright==0.8.0
+
+# === Automação de Browser ===
+playwright==1.60.0
+
+# === Browser-use (Demo visual AI) ===
+# CRÍTICO: Versão 0.13.1 usa ChatGoogle nativo
+browser-use==0.13.1
+
+# === API Gemini ===
+google-genai==1.65.0
+
+# === Utilitários ===
+python-dotenv==1.2.2
